@@ -77,8 +77,8 @@ Node * pointerToMax(LinkedList *list) {
 
   // Code may assume that these assertions are true;
   //  so does not need to do error checking for these conditions.
-Node * pointerToMin(LinkedList *list){
-  assert(list!=NULL);
+Node * pointerToMin(LinkedList *list) { 
+assert(list!=NULL);
   assert(list->head != NULL);
    Node*p=list->head;
    Node*Pointer_To_Min=list->head;
