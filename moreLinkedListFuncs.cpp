@@ -17,7 +17,7 @@ void addIntToEndOfList(LinkedList *list, int value) {
 
   if (list->head == NULL) {
                  list->head=p;
-		 list->tail=NULL;
+		 list->tail=p;
            
     
   } else {
