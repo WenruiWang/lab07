@@ -61,7 +61,7 @@ Node * pointerToMax(LinkedList *list) {
    Node*Pointer_To_Max=list->head;
    double max=list->head->data;//Initialize the pointers and variables defined.
    while((p->next)!=NULL){
-	   if(p->data>=max){
+	   if(p->data>max){
 		   max=p->data;
 		   Pointer_To_Max=p;}
 	   p=p->next;}
@@ -84,7 +84,7 @@ assert(list!=NULL);
    Node*Pointer_To_Min=list->head;
    double min=list->head->data;
    while((p->next)!=NULL){
-	   if(p->data<=min){
+	   if(p->data<min){
 		   min=p->data;
 		   Pointer_To_Min=p;}
 	   p=p->next;}
@@ -108,7 +108,7 @@ int largestValue(LinkedList *list) {
   Node*p=list->head;
   int max=list->head->data;
   while((p->next)!=NULL){
-	  if(p->data>=max){
+	  if(p->data>max){
 		  max=p->data;
 		  }
                         p=p->next;}
@@ -129,7 +129,7 @@ int smallestValue(LinkedList *list) {
   Node*p=list->head; 
   int min=list->head->data;
   while((p->next)!=NULL){
-	  if(p->data<=min){
+	  if(p->data<min){
 		  min=p->data;}
 	  p=p->next;}
   return min; // STUB!  Replace this line with correct code
