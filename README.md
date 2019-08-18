@@ -1,2 +1,1 @@
-# lab07
-Lab07 linked list
+# lab07-startercode
